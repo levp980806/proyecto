@@ -10,6 +10,7 @@
     appId: "1:546706185115:web:2a3ed1c87096bf8e411f3e",
     measurementId: "G-WJN0ZY7JLQ"
   };
+
   /*
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -108,10 +109,12 @@
         })
         .then(function(docRef) {
             console.log("Document written with ID: ", docRef.id);
+            alert("agregado exitosamente");
         })
         .catch(function(error) {
             console.error("Error adding document: ", error);
             alert(error);
+            alert("Ocurrio un error al ingresar");
         });
         
         
@@ -152,6 +155,8 @@
                 doc.ref.delete()
                 .then(() => {
                     console.log("Document successfully deleted!");
+                    console.log("Documento eliminado correctamente");
+                    alert("objeto borrado");
                   }).catch(function(error) {
                     console.error("Error removing document: ", error);
                   });
@@ -177,9 +182,10 @@
                         Calificacion : document.getElementById("calificacion").value,
                         Aula : new firebase.firestore.GeoPoint(parseFloat(document.getElementById("lat").value), parseFloat(document.getElementById("long").value)) 
                          
-                        
+
 
                     });
+                    alert("Objeto actualizao en base de datos"); 
                 })   
             })     
         
