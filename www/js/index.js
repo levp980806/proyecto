@@ -1,14 +1,14 @@
 
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyDdL80bdsl_fmKKms_-PQHztJusFbB6Iao",
-    authDomain: "base-f8e0c.firebaseapp.com",
-    databaseURL: "https://base-f8e0c.firebaseio.com",
-    projectId: "base-f8e0c",
-    storageBucket: "base-f8e0c.appspot.com",
-    messagingSenderId: "546706185115",
-    appId: "1:546706185115:web:2a3ed1c87096bf8e411f3e",
-    measurementId: "G-WJN0ZY7JLQ"
+    apiKey: "AIzaSyBbiZDALLJYnJyKFmLrbGT-gEehaix6gVA",
+    authDomain: "proyecto-9fa87.firebaseapp.com",
+    databaseURL: "https://proyecto-9fa87.firebaseio.com",
+    projectId: "proyecto-9fa87",
+    storageBucket: "proyecto-9fa87.appspot.com",
+    messagingSenderId: "840427108894",
+    appId: "1:840427108894:web:b0c515f23efcf9f6484c0f",
+    measurementId: "G-9ZR5738KP3"
   };
 
   /*
@@ -99,10 +99,10 @@
     agregaBasedeDatos : function(){
         var db = firebase.firestore(); 
 
-        db.collection("Alumnos").add({
+        db.collection("Jugadores").add({
             id : document.getElementById("id").value,
             Nombre : document.getElementById("nombre").value,
-            Clase : document.getElementById("clase").value,
+            Dorsal : document.getElementById("dorsal").value,
             Semestre : document.getElementById("semestre").value,
             Calificacion : document.getElementById("calificacion").value,
             Aula : new firebase.firestore.GeoPoint(parseFloat(document.getElementById("lat").value), parseFloat(document.getElementById("long").value))
